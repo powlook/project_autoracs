@@ -14,10 +14,10 @@ load the simple lake terrain into Gazebo and spawn 3 turtlebots onto the terrain
 
 2. Add these lines to your .bashrc file in the home directory
 
-	export TURTLEBOT3_MODEL=waffle_pi
-	export GAZEBO_MODEL_PATH=/home/ubuntu16/catkin_ws/src/project_autoracs/models:$GAZEBO_MODEL_PATH
-	source /opt/ros/kinetic/setup.bash
-	source catkin_ws/devel/setup.sh
+	- export TURTLEBOT3_MODEL=waffle_pi
+	- export GAZEBO_MODEL_PATH=/home/ubuntu16/catkin_ws/src/project_autoracs/models:$GAZEBO_MODEL_PATH
+	- source /opt/ros/kinetic/setup.bash
+	- source catkin_ws/devel/setup.sh
 
 3. Move the turtlebot3_simulations folder to the trash folder. (Do not delete first)
    The project_autoracs folders has some dependencies installed which will conflict with turtlebot_simulations
