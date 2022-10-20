@@ -3,15 +3,15 @@
   <arg name="first_tb3"  default="tb3_0"/>
   <arg name="second_tb3" default="tb3_1"/>
 
-  <arg name="first_tb3_x_pos" default=" 4.0"/>
-  <arg name="first_tb3_y_pos" default=" 4.0"/>
+  <arg name="first_tb3_x_pos" default=" 2"/>
+  <arg name="first_tb3_y_pos" default=" 2"/>
   <arg name="first_tb3_z_pos" default=" 0.0"/>
-  <arg name="first_tb3_yaw"   default="-1.57"/>
+  <arg name="first_tb3_yaw"   default=" 0.0"/>
 
-  <arg name="second_tb3_x_pos" default="-4.0"/>
-  <arg name="second_tb3_y_pos" default="-4.0"/>
+  <arg name="second_tb3_x_pos" default="-2.5"/>
+  <arg name="second_tb3_y_pos" default="-2.5"/>
   <arg name="second_tb3_z_pos" default=" 0.0"/>
-  <arg name="second_tb3_yaw"   default=" 1.57"/>
+  <arg name="second_tb3_yaw"   default=" 0.0"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/pillar10x10.world"/>
@@ -50,7 +50,7 @@
       <param name="tf_prefix" value="$(arg second_tb3)" />
     </node>
 
-    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg second_tb3) -x $(arg second_tb3_x_pos) -y $(arg second_tb3_y_pos) -z $(arg second_tb3_z_pos) -Y $(arg first_tb3_yaw) -param robot_description" />
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg second_tb3) -x $(arg second_tb3_x_pos) -y $(arg second_tb3_y_pos) -z $(arg second_tb3_z_pos) -Y $(arg second_tb3_yaw) -param robot_description" />
     <include file="$(find turtlebot3_slam)/launch/turtlebot3_gmapping.launch">
       <arg name="set_base_frame" value="$(arg second_tb3)/base_footprint"/>
       <arg name="set_odom_frame" value="$(arg second_tb3)/odom"/>
