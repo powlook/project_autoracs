@@ -1,8 +1,8 @@
 <launch>
   <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
 
-  <arg name="x_pos" default="4.0"/>
-  <arg name="y_pos" default="4.0"/>
+  <arg name="x_pos" default="-2.5"/>
+  <arg name="y_pos" default="-2.5"/>
   <arg name="z_pos" default="0.0"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -21,7 +21,8 @@
 
   <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
       <!--arg name="map_file" value="/home/ubuntu16/TB3_WORLD.yaml"/-->
-      <arg name="map_file" value="/home/ubuntu16/map/pillar10x10_2028.yaml"/>
+      <!--arg name="map_file" value="/home/ubuntu16/map/pillar10x10_2028.yaml"/-->
+      <arg name="map_file" value="/home/ubuntu16/map/map/two_run_8_sample.yaml"/>
       <arg name="open_rviz" value="true"/>
   </include>
 

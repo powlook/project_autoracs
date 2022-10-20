@@ -2,7 +2,8 @@
   <!--<param name="/use_sim_time" value="true"/>-->
 
   <!-- Run the map server -->
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find map_launcher)/map/pillar10x10_2028.yaml" >
+  <!--node name="map_server" pkg="map_server" type="map_server" args="$(find map_launcher)/map/pillar10x10_2028.yaml" -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find map_launcher)/map/two_run_8_final.yaml" >
     <param name="frame_id" value="/map" />
   </node>
 <!--
