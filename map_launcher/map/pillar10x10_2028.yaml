@@ -1,4 +1,4 @@
-image: /home/ubuntu16/map/pillar10x10_2028.pgm
+image: /home/ubuntu16/catkin_ws/src/project_autoracs/map_launcher/map/pillar10x10_2028.pgm
 resolution: 0.050000
 origin: [-9.575000, -9.800000, 0.000000]
 negate: 0

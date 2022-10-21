@@ -1,4 +1,4 @@
-image: /home/ubuntu16/catkin_ws/src/Navigate_Multiple_Robots/map_launcher/map/map.pgm
+image: /home/ubuntu16/catkin_ws/src/project_autoracs/map_launcher/map/map.pgm
 resolution: 0.050000
 origin: [-10.000000, -10.000000, 0.000000]
 negate: 0
