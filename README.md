@@ -44,3 +44,42 @@ load the simple lake terrain into Gazebo and spawn 3 turtlebots onto the terrain
 At this point, Gazebo should have launched, loaded the simple lake terrain, and
 spawned 3 turtlebot3  onto the terrain. A common mistake is to forgot
 to source the Gazebo environment in step 2.
+
+
+## Multiple turtlebots SLAM
+
+1. First, you need to install the ros-kinetic-multirobot-map-merge package (only need to do for the first time)
+
+        $ sudo apt install ros-kinetic-multirobot-map-merge
+
+2. Start the pillar10x10 world (pillar10x10.world) with 2 turtlebots. Utilize the turtlebot3_drive.cpp to navigate the turtlebots.
+
+        $ roslaunch multi_slam robots_multi_moving.launch
+
+3. Subcript to the map topics of both turtlebots and merge the 2 maps
+
+        $ roslaunch multi_slam robots_multi_map_merge.launch
+
+4. Visualize the maps
+
+        $ rosrun rviz rviz -d `rospack find multi_slam`/rviz/robots_multi_slam.rviz
+
+5. Save the map
+
+        $rosrun map_server map_saver -f ~/map/map_filename
+
+## Multiple turtlebots Navigation
+
+1. Launch the global map (after merging) and the pillar10x10.world
+
+        $ roslaunch multi_nav robots_multi_static.launch
+
+2. Launch the navigation node for multiple turtlebots navigation
+
+        $ roslaunch multi_nav robots_multi_navigation.launch
+
+FAQ: 
+1. I have issue with map_merge package. Check if the ros-kinetic-multirobot-map-merge already installed.
+2. Why initial_pose.py fail? Check the file, make sure it is executable.
+
+
