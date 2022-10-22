@@ -43,7 +43,7 @@ multi_nav - multiple robots navigation
         
 or 
 
-        $ roslaunch multi_slam robots_multi_moving.launch my_map:=rectangle_v2.world
+        $ roslaunch multi_slam robots_multi_moving.launch my_world:=rectangle_v2.world
 
 3. Subcript to the map topics of both turtlebots and merge the 2 maps
 
