@@ -482,7 +482,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/.gazebo/models/oak_tree/meshes/oak_tree.dae</uri>
+            <uri>models/oak_tree/meshes/oak_tree.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -507,7 +507,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/.gazebo/models/oak_tree/meshes/oak_tree.dae</uri>
+            <uri>models/oak_tree/meshes/oak_tree.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
