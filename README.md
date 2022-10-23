@@ -12,38 +12,23 @@ load the simple lake terrain into Gazebo and spawn 3 turtlebots onto the terrain
         $ cd /home/ubuntu16/catkin_ws/src/
         $ git clone git@github.com:powlook/project_autoracs.git
 
-2. Add these lines to your .bashrc file in the home directory
+2. catkin make the project_autoracs
 
-	- export TURTLEBOT3_MODEL=waffle_pi
-	- export GAZEBO_MODEL_PATH=/home/ubuntu16/catkin_ws/src/project_autoracs/models:$GAZEBO_MODEL_PATH
-	- source /opt/ros/kinetic/setup.bash
-	- source catkin_ws/devel/setup.sh
-
-3. Move the turtlebot3_simulations folder to the trash folder. (Do not delete first)
-   The project_autoracs folders has some dependencies installed which will conflict with turtlebot_simulations
-
-4. Source the ROS system environment and source the Gazebo environment
-
-        $ cd
-        $ . /opt/ros/<ROS_DISTRO>/setup.bash
-        $ . /usr/share/gazebo/setup.sh
-
-5. Install dependencies and build the package
-
-        $ cd catkin_ws
-        $ rosdep install --from-paths src --ignore-src -r -y
+        $ cd /home/ubuntu16/catkin_ws
         $ catkin_make
    When you catkin_make, check that there are no errors in the make process. Fix the errors even if the catkin_make
    is successful.
 
-6. Open a new terminal and launch the example below
+3. Open a new terminal and launch the example below
 
-        $ roslaunch project_autoracs multi_robots.launch
+        $ roslaunch multi_world multi_robots_rectangle.launch
 
 
-At this point, Gazebo should have launched, loaded the simple lake terrain, and
-spawned 3 turtlebot3  onto the terrain. A common mistake is to forgot
-to source the Gazebo environment in step 2.
+At this point, Gazebo should have launched, loaded the multiple robots in the rectangle world. Project folder structures as below:
+project_autoracs:
+multi_world - store the world and maps
+multi_slam - multiple robots SLAM
+multi_nav - multiple robots navigation
 
 
 ## Multiple turtlebots SLAM
@@ -55,10 +40,18 @@ to source the Gazebo environment in step 2.
 2. Start the pillar10x10 world (pillar10x10.world) with 2 turtlebots. Utilize the turtlebot3_drive.cpp to navigate the turtlebots.
 
         $ roslaunch multi_slam robots_multi_moving.launch
+        
+or 
+
+        $ roslaunch multi_slam robots_multi_moving.launch my_world:=rectangle_v2.world
 
 3. Subcript to the map topics of both turtlebots and merge the 2 maps
 
         $ roslaunch multi_slam robots_multi_map_merge.launch
+
+or 
+
+        $ roslaunch multi_slam robots_multi_map_merge.launch first_tb3_x_pos:=<x1> first_tb3_y_pos:=<y1> first_tb3_z_pos:=<z1> first_tb3_yaw:=<yaw1> second_tb3_x_pos:=<x2> second_tb3_y_pos:=<y2> second_tb3_z_pos:=<z2> second_tb3_yaw=<yaw2>
 
 4. Visualize the maps
 
@@ -81,5 +74,4 @@ to source the Gazebo environment in step 2.
 FAQ: 
 1. I have issue with map_merge package. Check if the ros-kinetic-multirobot-map-merge already installed.
 2. Why initial_pose.py fail? Check the file, make sure it is executable.
-
 

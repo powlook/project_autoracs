@@ -4,10 +4,11 @@
   <arg name="x_pos" default="-2.5"/>
   <arg name="y_pos" default="-2.5"/>
   <arg name="z_pos" default="0.0"/>
+  <arg name="my_world" default="pillar10x10.world"/>
+  <arg name="my_map" default="two_run_8_sample.yaml"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <!--arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/turtlebot3_world.world"/-->
-    <arg name="world_name" value="/home/ubuntu16/catkin_ws/src/project_autoracs/worlds/pillar10x10.world"/>
+    <arg name="world_name" value="$(find multi_world)/worlds/$(arg my_world)"/>
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
@@ -20,9 +21,7 @@
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
 
   <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
-      <!--arg name="map_file" value="/home/ubuntu16/TB3_WORLD.yaml"/-->
-      <!--arg name="map_file" value="/home/ubuntu16/map/pillar10x10_2028.yaml"/-->
-      <arg name="map_file" value="/home/ubuntu16/catkin_ws/src/project_autoracs/map_launcher/map/two_run_8_sample.yaml"/>
+      <arg name="map_file" value="$(find multi_world)/map_launcher/map/$(arg my_map)"/>
       <arg name="open_rviz" value="true"/>
   </include>
 
