@@ -762,6 +762,7 @@
         </surface>
       </collision>
     </link>
+
     <link name='link_5'>
       <pose frame=''>3.05201 3.73206 -0.206446 0 -0 0</pose>
       <inertial>
@@ -855,6 +856,7 @@
         </surface>
       </collision>
     </link>
+
     <link name='link_5_clone'>
       <pose frame=''>-6.51117 4.17622 -0.206445 0 -0 0</pose>
       <inertial>
@@ -948,6 +950,7 @@
         </surface>
       </collision>
     </link>
+
     <link name='link_6'>
       <pose frame=''>-6.60381 0.928784 -0.114702 0 -0 0</pose>
       <inertial>
@@ -1146,7 +1149,7 @@
         </surface>
       </collision>
     </link>
-    <static>0</static>
+    <static>1</static>
     <allow_auto_disable>1</allow_auto_disable>
   </model>
 </sdf>
