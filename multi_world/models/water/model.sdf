@@ -12,7 +12,8 @@
           <script>
             <uri>model://water/media/scripts</uri>
             <uri>model://water/media/Textures</uri>
-            <name>RepeatedWater/Diffuse</name>
+            <!--- <name>RepeatedWater/Diffuse</name> --->
+            <name>Water/Image</name>
           </script>
         </material>
       </visual>

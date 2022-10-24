@@ -18,7 +18,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_1m.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_1m.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -43,7 +43,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_1m.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_1m.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -111,7 +111,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_07.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_07.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -136,7 +136,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_07.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_07.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -204,7 +204,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_07.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_07.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -229,7 +229,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_07.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_07.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -297,7 +297,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_cone.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_cone.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -322,7 +322,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_cone.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_cone.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -390,7 +390,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_square.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_square.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -415,7 +415,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_square.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_square.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -483,7 +483,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_square.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_square.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -508,7 +508,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_square.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_square.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -576,7 +576,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_2.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_2.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -601,7 +601,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_2.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_2.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -669,7 +669,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_cone2.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_cone2.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -694,7 +694,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_cone2.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_cone2.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -762,7 +762,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_cone2.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_cone2.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -787,7 +787,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_cone2.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_cone2.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -855,7 +855,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_square2.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_square2.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -880,7 +880,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/materials/meshes/rock_square2.dae</uri>
+            <uri>$(find multi_world)/materials/meshes/rock_square2.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>

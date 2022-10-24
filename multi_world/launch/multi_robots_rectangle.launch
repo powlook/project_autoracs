@@ -15,11 +15,7 @@
   <arg name="second_tb3_yaw"   default=" 1.57"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-<<<<<<< HEAD:launch/multi_robots_rectangle.launch
-    <arg name="world_name" value="$(find project_autoracs)/worlds/rectangle.world"/>
-=======
     <arg name="world_name" value="$(find multi_world)/worlds/rectangle_v2.world"/>
->>>>>>> 9dd17b0aaef670c2f44d81a7a891e04904c61a1a:multi_world/launch/multi_robots_rectangle.launch
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
