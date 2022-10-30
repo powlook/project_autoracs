@@ -21,7 +21,7 @@
       <direction>-0.5 0.5 -1</direction>
     </light>
 
-    <model name='ground_plane'>
+    <model name='my_ground_plane'>
       <static>1</static>
       <link name='link'>
         <collision name='collision'>
@@ -49,6 +49,7 @@
           <max_contacts>10</max_contacts>
         </collision>
         <visual name='visual'>
+	  <transparency>0</transparency>
           <cast_shadows>0</cast_shadows>
           <geometry>
             <plane>
@@ -58,8 +59,11 @@
           </geometry>
           <material>
             <script>
-              <uri>$(find multi_world)/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Turquoise</name>
+	      <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/multi_world/models/my_ground_plane/materials/scripts/my_ground_plane.material</uri>
+              <uri>/home/ubuntu16/catkin_ws/src/project_autoracs/multi_world/models/my_ground_plane/materials/textures/</uri>  
+	      <name>MyGroundPlane/Image</name>
+              <!-- uri>/home/ubuntu16/catkin_ws/src/project_autoracs/multi_world/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Turquoise</name -->
             </script>
           </material>
         </visual>
@@ -333,7 +337,8 @@
       <real_time>54 990746739</real_time>
       <wall_time>1666595619 407189745</wall_time>
       <iterations>48788</iterations>
-      <model name='ground_plane'>
+
+      <!--model name='my_ground_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -342,7 +347,8 @@
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
-      </model>
+      </model -->
+
       <model name='rectangle'>
         <pose frame=''>-2.491 -0.932 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -377,6 +383,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+
       <model name='rectangle_v4'>
         <pose frame=''>0.325247 0.566627 0.481649 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -453,10 +460,12 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+
       <light name='sun'>
         <pose frame=''>0 0 10 0 -0 0</pose>
       </light>
     </state>
+
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose frame=''>0.252243 0.462514 65.0678 3.14159 1.57079 3.14159</pose>
@@ -464,6 +473,7 @@
         <projection_type>orthographic</projection_type>
       </camera>
     </gui>
+
     <model name='rectangle_v4'>
       <link name='link_0'>
         <pose frame=''>-2.4371 4.8725 -0.041325 0 -0 0</pose>

@@ -10,8 +10,7 @@ material MyGroundPlane/Image
 
 	  texture_unit
 	  {
-		texture unsplash.png
-		filtering trilinear
+		texture water_01.png
 	  }
 	}
   }

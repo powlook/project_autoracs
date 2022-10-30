@@ -3,9 +3,10 @@
   <arg name="x_pos" default="0.0"/>
   <arg name="y_pos" default="0.0"/>
   <arg name="z_pos" default="0.0"/>
+  <arg name="my_world" default="rectangle_v3.world"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find multi_world)/worlds/rectangle.world"/>	
+    <arg name="world_name" value="$(find multi_world)/worlds/$(arg my_world)"/>	
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
