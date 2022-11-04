@@ -12,6 +12,7 @@
   <exec_depend>multi_slam</exec_depend>
   <exec_depend>multi_nav</exec_depend>
   <exec_depend>multi_world</exec_depend>
+  <exec_depend>multi_path_plan</exec_depend>
   <export><metapackage/>
   </export>
 </package>
