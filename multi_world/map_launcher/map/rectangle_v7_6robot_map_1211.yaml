@@ -1,0 +1,7 @@
+image: /home/ubuntu16/catkin_ws/src/project_autoracs/multi_world/map_launcher/map/rectangle_v7_6robot_map_1211.pgm
+resolution: 0.050000
+origin: [-9.000000, -9.000000, -nan]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+
